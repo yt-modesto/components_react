@@ -1,15 +1,16 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import "./index.css";
-import Home from "./pages/Home";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import * as Styled from "./css/globalstyle";
+import { Home } from "./pages/Home";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );
 root.render(
   <React.StrictMode>
+    <Styled.GlobalStyle />
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
