@@ -1,7 +1,7 @@
 export const Home = () => {
   return (
     <div>
-      <h1>bem vindo!</h1>
+      <h1>Esses são os compoenentes existentes:</h1>
     </div>
   );
 };
