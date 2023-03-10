@@ -3,7 +3,7 @@ import { TitleCards } from "../TitleForCards";
 export const CardPlatinium = () => {
   return (
     <styles.CardPlatinium>
-      <TitleCards>Titulo</TitleCards>
+      <TitleCards title={"Titulo #1"} />
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni eos,
         aperiam provident doloribus molestiae, reprehenderit ipsam nostrum, rem

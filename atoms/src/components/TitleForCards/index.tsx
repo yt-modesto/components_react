@@ -1,8 +1,18 @@
+import { useEffect, useState } from "react";
 import * as styled from "../../css/TitleForCards";
 
-export type PorpsTitleCards = {
-  children: string;
-};
+export interface PorpsTitleCards {
+  title?: string;
+}
+
 export function TitleCards(props: PorpsTitleCards) {
-  return <styled.TitleCard>{props.children}</styled.TitleCard>;
+  const [state, setState] = useState("Default Title");
+
+  useEffect(() => {
+    if (props.title !== undefined) {
+      setState(props.title);
+    }
+  }, [props.title, state]);
+
+  return <styled.TitleCard>{state}</styled.TitleCard>;
 }
