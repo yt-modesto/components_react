@@ -1,4 +1,4 @@
-import * as styles from "../../css/CardPlatinium/cardplatinium";
+import * as styles from "../../css/CardPlatinium";
 import { TitleCards } from "../TitleForCards";
 export const CardPlatinium = () => {
   return (

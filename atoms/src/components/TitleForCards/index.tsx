@@ -1,4 +1,4 @@
-import * as styled from "../../css/TitleForCards/titleForcards";
+import * as styled from "../../css/TitleForCards";
 
 export type PorpsTitleCards = {
   children: string;
