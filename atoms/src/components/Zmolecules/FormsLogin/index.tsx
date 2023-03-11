@@ -8,9 +8,9 @@ export type PropsFormsLogin = {
 export const FormsLogin = (props: PropsFormsLogin) => {
   return (
     <Styles.FormLoginContainer>
-      <form action="/auth/login" method="post">
-        <InputCustom type={"email"} />
-        <InputCustom type={"password"} />
+      <form action="/auth/login" method="POST">
+        <InputCustom type={"email"} name={"email"} />
+        <InputCustom type={"password"} name={"password"} />
         <ButtonLogin tipo={"submit"} text={"login"} />
       </form>
     </Styles.FormLoginContainer>
