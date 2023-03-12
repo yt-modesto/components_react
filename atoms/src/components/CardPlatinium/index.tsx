@@ -1,5 +1,6 @@
 import * as styles from "../../css/CardPlatinium";
 import { TitleCards } from "../TitleForCards";
+
 export const CardPlatinium = () => {
   return (
     <styles.CardPlatinium>

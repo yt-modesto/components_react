@@ -19,11 +19,4 @@ export const GlobalStyle = createGlobalStyle`
     font-family: 'Roboto', sans-serif;
     font-size: 1.6rem;
   }
-  .contaner-main .container{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap:wrap;
-  }
 `;

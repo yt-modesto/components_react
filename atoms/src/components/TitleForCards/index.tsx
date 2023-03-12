@@ -7,12 +7,15 @@ export interface PorpsTitleCards {
 
 export function TitleCards(props: PorpsTitleCards) {
   const [state, setState] = useState("Default Title");
-
   useEffect(() => {
     if (props.title !== undefined) {
       setState(props.title);
     }
   }, [props.title, state]);
 
-  return <styled.TitleCard>{state}</styled.TitleCard>;
+  return (
+    <styled.TitleCard>
+      <h1>{state}</h1>
+    </styled.TitleCard>
+  );
 }
